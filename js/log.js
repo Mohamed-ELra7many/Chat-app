@@ -78,37 +78,3 @@ dadImge.addEventListener("click", (e)=>{
 
 }
 
-{    //This is for if the inputs are empty
-
-    let hearts = document.querySelector(".hearts")
-let button = document.getElementById("button")
-
-const angry = ()=>{
-    let prantheart = document.createElement("div")
-        button.append(prantheart)
-        let stophea = setInterval(() => {
-            let heart = document.createElement("div")
-        heart.classList.add("heart")
-        heart.innerHTML = "&#128545;"   // This is to add an emoji code
-        prantheart.appendChild(heart)
-        heart.style.left= `${Math.random() * 100}%`
-        heart.style.animationDuration = `${( Math.random() + .5) * 1.5}s`  //This is in order for the emoji to be downloaded in a random way
-        },50 );
-        setTimeout(() => {
-            clearInterval(stophea)
-        }, 3000);
-    
-        setTimeout(() => {
-            prantheart.remove()
-        }, 5000);
-}
-
-
-    button.addEventListener("click",(e) => {
-        angry()
-    })
-
-}
-
-
-
