@@ -291,20 +291,3 @@ form .buttons button:hover{
 }
 /*end form*/
 
-
-/*start emojii*/
-
-.heart{
-    font-size: 60px;
-    animation: nn 3s  linear forwards;
-    position: fixed;
-    top: 0px;
-
-}
-
-@keyframes nn {
-    0% {transform: translateY(-5vh);}
-    100% {transform: translateY(110vh);}
-}
-
-/*end emojii*/
